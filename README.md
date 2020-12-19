@@ -1,6 +1,6 @@
 # Social-network-models
 This is a toy model of a social networks with influential nodes,
-based on the networkx package.
+based on the networkx package(https://networkx.org/).
 
 The nodes update their opinions based on the interactions with other nodes.
 The influential have higher influence over other nodes, 
