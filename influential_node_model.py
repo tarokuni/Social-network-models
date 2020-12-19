@@ -40,7 +40,7 @@ def create_network():
                     network.add_edge(i, j)
 
 def update_network():
-    for i in network.nodes():
+    for i in network.nodes(): # influencer
         inf_neighbor = []
         non_inf_neighbor = []
         for j in network.nodes():
@@ -52,7 +52,7 @@ def update_network():
      
         i_succ = []
         i_succ[:] = network.successors(i)
-        for j in i_succ:
+        for j in i_succ: # influencee
             if network.nodes[i]['influential'] == True \
                     and network.nodes[j]['influential'] == True \
                     and rd.uniform(0,1) < 0.05:
