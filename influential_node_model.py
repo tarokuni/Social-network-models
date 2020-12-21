@@ -124,6 +124,8 @@ if __name__ == "__main__":
        opinions.append(network.nodes[node]['opinion'])
     plt.hist(opinions, range=(-1, 1))
 
+    ## Change to the following when visualizing network
+    
     # node_color = []
     # node_size = []
     # for i in network.nodes():
